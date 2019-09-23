@@ -1,0 +1,20 @@
+
+<ion-header>
+  <ion-navbar>
+    <button block ion-button (click)="logout()" round class="logout">
+      <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <button block ion-button (click)="searchDet()">Search Details</button><br>
+  <button block ion-button (click)="currency()">Foreign Exchange Rate</button><br>
+  <button block ion-button (click)="takeImage()">Take Image</button><br><br>
+  <p align="center"><img src="{{ myphoto }}"></p>
+</ion-content>
+
+
+<!--rst.name {{rst.gender}}-->
+

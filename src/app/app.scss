@@ -14,3 +14,23 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+.bg{
+  background-color: grey;
+}
+.toolbar-background {
+  background-color: #488aff;
+}
+
+// all tabs
+.tabs-md .tabbar {
+  background: #488aff;
+}
+// all tabs texts
+.tabs-md .tab-button-text {
+  font-size: 14px;
+  color: black;
+}
+// selected tab
+.tabs-md .tab-button[aria-selected=true] {
+  background-color: #fff;
+}

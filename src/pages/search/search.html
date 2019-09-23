@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Search Details
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Search about anything you would like to...</ion-label>
+        <ion-input type ="text"[(ngModel)]="search" id = search></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button (click)="searchdetails()">Search Details</button>
+    <div *ngIf="details != null">
+
+     <h3><ion-label>Brief Description about : {{name}}</ion-label></h3>
+      <ion-label>{{description}}</ion-label>
+      <ion-label>{{detailedDescription}}</ion-label>
+      <img src="{{image}}" style="width: 100px; height: 70px;" align="center"/>
+      <ion-label> Reference:{{url}}</ion-label>
+    </div>
+  </div>
+</ion-content>

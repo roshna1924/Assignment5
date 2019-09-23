@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Check Foreign Exchange Rates
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<div padding>
+
+
+  <ion-item>
+    <div>Enter the Currency</div>
+    <input type="text"  [(ngModel)]="currency" name="currency" >
+  </ion-item>
+
+  <button ion-button (click)="getRates()">Continue</button>
+  <div class="col">
+    <h3>Australian Dollar: {{AUD}}</h3>
+    <h3>Bulgarian Lev: {{BGN}}</h3>
+    <h3>Canadian Dollar: {{CAD}}</h3>
+    <h3>Chinese Yuan: {{CNY}}</h3>
+    <h3>Euro: {{EUR}}</h3>
+    <h3>Honh Kong Dollar: {{HKD}}</h3>
+    <h3>INR: {{INR}}</h3>
+    <h3>Malaysian Ringgit: {{MYR}}</h3>
+    <h3>Pound: {{GBP}}</h3>
+    <h3>USD: {{USD}}</h3>
+  </div>
+
+</div>
+</ion-content>

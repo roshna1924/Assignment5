@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Holiday Calender
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div>Holidays List</div>
+
+  <ion-item>
+    <div>Enter country </div>
+    <input type="text"  [(ngModel)]="country" name="country" >
+  </ion-item>
+
+  <ion-item>
+    <div>Enter year</div>
+    <input type="text"  [(ngModel)]="year" name="year">
+  </ion-item>
+  <button  ion-button (click)="searchHold()">Search</button>
+  <br>
+  <!--<P>Total tag are : {{count}}</P>-->
+  <br><br><br>
+  <h4>{{date}} &nbsp;&nbsp;
+    {{name}}</h4>
+  <br>
+  <h4>{{date1}} &nbsp;&nbsp;
+    {{name1}}</h4>
+  <br><h4>{{date2}} &nbsp;&nbsp;
+  {{name2}}</h4>
+  <br><h4>{{date3}} &nbsp;&nbsp;
+  {{name3}}</h4>
+  <br><h4>
+  {{date4}} &nbsp;&nbsp;
+  {{name4}}</h4>
+  <br><h4>
+  {{date5}} &nbsp;&nbsp;
+  {{name5}}</h4>
+  <br><h4>
+  {{date6}} &nbsp;&nbsp;
+  {{name6}}</h4>
+  <br><h4>
+  {{date7}} &nbsp;&nbsp;
+  {{name7}}</h4>
+  <br><h4>
+  {{date8}} &nbsp;&nbsp;
+  {{name8}}</h4>
+  <br><h4>
+  {{date9}} &nbsp;&nbsp;
+  {{name9}}</h4>
+  <br><h4>
+  {{date10}} &nbsp;&nbsp;
+  {{name10}}</h4>
+
+  </ion-content>
